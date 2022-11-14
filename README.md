@@ -1,9 +1,10 @@
+## A simple crud app built with Node.js, Express.js, EJS and TypeScript.
 - PORT is 9000
-run ```npm install``` to install all node dependencies.
-run ```nodemon app.ts``` to start server
+- run ```npm install``` to install all node dependencies.
+- run ```nodemon app.ts``` to start server
 
 # Browser Documentation
--  Visit 'localhost:9000/users'
+-  Visit **_localhost:9000/users_**
 
 
 # Api Documentation
