@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+
+
+<main>
+<div class="container mt-5">
+   <h1>Showing All Users</h1>
+    
+   
+   <div class="row g-5 justify-content-center align-items-center g-2">
+
+      <% data.forEach((person) => { %>
+      <div class="col-4">
+         <div class="card shadow-sm text-start">
+           
+           <div class="card-body">
+             <h4 class="card-title"><%= person.name %></h4>
+             <p class="card-text"><%= person.role %></p>
+           </div>
+           <div class="card-footer">
+            <a class="float-start card-link" href="/users/<%= person.id %>">Details</a> 
+            <form method="post" action="/users/<%= person.id %>?_method=DELETE">
+            <button class="float-end btn btn-sm btn-danger card-link">Delete</button>
+            </form>
+         </div>
+         </div>
+
+         
+      </div>
+
+      <% }) %>
+      
+
+   </div>
+</div>
+</main>
+
+<%- include('partials/footer') %>

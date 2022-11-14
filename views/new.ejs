@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<main>
+   <div class="container mt-5">
+      <h1>Create New User</h1>
+      <div class="card text-start">
+        
+        <div class="card-body">
+         <form method="POST" action="/users/new">
+         <div class="mb-3 form-floating">
+           
+           <input required type="text"
+             class="form-control" name="name" id="" placeholder="Name">
+             <label for="" class="form-label">Name</label>
+           
+         </div>
+
+         <div class="mb-3 form-floating">
+           
+            <input required type="text"
+              class="form-control" name="role" id="" placeholder="Name">
+              <label for="" class="form-label">Role</label>
+            
+          </div>
+
+          <button class="btn btn-primary" type="submit">Create User</button>
+
+
+         
+        </div>
+       
+      </div>
+
+      
+   </div>
+
+   
+
+</div>
+</div>
+</main>
+
+<%- include('partials/footer') %>

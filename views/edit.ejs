@@ -1,0 +1,45 @@
+<%- include('partials/header', {title: `Editing User details`})%>
+
+<main>
+   <div class="container mt-5">
+      <h1>Editing User Details</h1>
+      
+            <div class="card text-start">
+              
+              <div class="card-body">
+               <form method="POST" action="/users/<%= person.id %>?_method=PATCH">
+               <div class="mb-3 form-floating">
+                 
+                 <input required type="text" value="<%= person.name %>"
+                   class="form-control" name="name" id="" placeholder="Name">
+                   <label for="" class="form-label">Name</label>
+                 
+               </div>
+
+               <div class="mb-3 form-floating">
+                 
+                  <input required type="text" value="<%= person.role %>"
+                    class="form-control" name="role" id="" placeholder="Name">
+                    <label for="" class="form-label">Role</label>
+                  
+                </div>
+
+                <button class="btn btn-primary" type="submit">Save Changes</button>
+
+
+               
+              </div>
+              
+            </div>
+   
+            
+         </div>
+   
+         
+         
+   
+      </div>
+   </div>
+   </main>
+
+<%- include('partials/footer') %>
